@@ -28,7 +28,7 @@ namespace CaesarCipher
                 char character = secretMessage[i];
 
                 int index = Array.IndexOf(alph, character);
-                index = (index + 3) % 26;
+                index = (index + keyNumber) % 26;
 
                 secretMessage[i] = alph[index];
             }
